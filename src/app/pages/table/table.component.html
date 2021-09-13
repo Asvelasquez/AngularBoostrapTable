@@ -1,0 +1,19 @@
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+      <tr>
+       
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">weight</th>
+        <th scope="col">symbol</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let elements of tableData">
+        <th scope="row">{{elements.position}}</th>
+        <td>{{elements.name}}</td>
+        <td>{{elements.weight}}</td>
+        <td>{{elements.symbol}}</td>
+      </tr>
+    </tbody>
+  </table>
